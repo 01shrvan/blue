@@ -1,0 +1,114 @@
+#include <iostream>
+#include <chrono>
+#include <thread>
+#include <vector>
+
+using namespace std;
+
+void delay(int milliseconds) {
+    this_thread::sleep_for(chrono::milliseconds(milliseconds));
+}
+
+void typeEffect(const string& text, int speed = 50) {
+    for (char c : text) {
+        cout << c << flush;
+        delay(speed);
+    }
+    cout << endl;
+}
+
+void displayStars() {
+    cout << "  *    *   *  " << endl;
+    cout << "*   *     *   " << endl;
+    cout << "   *  *    * *" << endl;
+}
+
+void displayWaves() {
+    cout << "~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "  ~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "    ~~~~~~~~~~~~~~~~~~" << endl;
+}
+
+void displayHeart() {
+    cout << "   *****     *****   " << endl;
+    cout << " *******   *******  " << endl;
+    cout << "********* ********* " << endl;
+    cout << " ***************** " << endl;
+    cout << "   *************   " << endl;
+    cout << "     *********     " << endl;
+    cout << "       *****       " << endl;
+    cout << "        ***        " << endl;
+    cout << "         *         " << endl;
+}
+
+void displayLyrics() {
+    delay(1800);
+    
+    typeEffect("Your morning eyes, I could stare like watching stars");
+    delay(6200);
+    displayStars();
+    delay(4500);
+    typeEffect("I could walk you by, and I'll tell without a thought");
+    delay(5900);
+    typeEffect("You'd be mine");
+    delay(1800);
+    typeEffect("Would you mind if I took your hand tonight?");
+    delay(4800);
+    typeEffect("Know you're all that I want - this life");
+    delay(6800);
+    
+    delay(2200);
+    typeEffect("I'll imagine we fell in love");
+    delay(2900);
+    typeEffect("I'll nap under moonlight skies with you");
+    delay(3400);
+    displayWaves();
+    delay(3200);
+    typeEffect("I think I'll picture us, you with the waves");
+    delay(3400);
+    typeEffect("The ocean's colors on your face");
+    delay(3400);
+    typeEffect("I'll leave my heart with your air");
+    delay(3600);
+    typeEffect("So let me fly with you");
+    delay(2800);
+    typeEffect("Will you be forever with me?");
+    delay(6000);
+    
+    delay(27000);
+    typeEffect("My love will always stay by you");
+    delay(5200);
+    typeEffect("I'll keep it safe, so don't you worry a thing");
+    delay(4700);
+    typeEffect("I'll tell you I love you more");
+    delay(2900);
+    typeEffect("It's stuck with you forever, so promise you won't let it go");
+    delay(6200);
+    typeEffect("I'll trust the universe will always bring me to you");
+    delay(7800);
+    
+    delay(2300);
+    typeEffect("I'll imagine we fell in love");
+    delay(2600);
+    typeEffect("I'll nap under moonlight skies with you");
+    delay(3400);
+    displayWaves();
+    delay(3200);
+    typeEffect("I think I'll picture us, you with the waves");
+    delay(2900);
+    typeEffect("The ocean's colors on your face");
+    delay(3000);
+    typeEffect("I'll leave my heart with your air");
+    delay(3800);
+    typeEffect("So let me fly with you");
+    delay(3000);
+    typeEffect("Will you be forever with me?");
+    delay(6600);
+    
+    displayHeart();
+}
+
+int main() {
+    displayLyrics();
+    return 0;
+}
