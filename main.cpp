@@ -49,7 +49,7 @@ void printLyrics() {
         {"i'll trust the universe will always bring me to you", 6.85, 8.50},
         {"i'll imagine we fell in love", 15.35, 2.60},
         {"i'll nap under moonlight skies with you", 17.95, 3.90},
-        {"i think I'll picture us, you with the waves", 21.85, 3.63},
+        {"i think i'll picture us, you with the waves", 21.85, 3.63},
         {"the ocean's colors on your face", 25.48, 3.54},
         {"i'll leave my heart with your air", 29.02, 4.40},
         {"so let me fly with you", 33.42, 3.41},
